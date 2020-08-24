@@ -39,17 +39,16 @@ console.log(stringToCheck);
 // FUNCTION 3 //
 function lettersIdentifier(stringExample) {
     for(var i = 0; i < stringExample.length; i++) {
-        if (stringExample[i].startsWith("ph")) {
+        if (stringExample[i].startsWith("ph"))
             return stringExample[i];
-        }
     }
-    console.log("These words don't start with a ph..");
+    console.log("These words don't start with a ph");
 }
 
 // Uncomment to test
-var stringInput = ["Hello", "Bugs", "Tom", "Cats", "phone"];
+//var stringInput = ["Hello", "Bugs", "Tom", "Cats", "phone"];
 //var stringInput = ["Tom", "Phil", "Chris", "nancy", "pheobe"];
-//var stringInput = ["Opera", "singer", "Theater", "dapper", "hero"];
+var stringInput = ["Opera", "singer", "Theater", "dapper", "hero"];
 
 var stringResult = lettersIdentifier(stringInput);
 console.log(stringResult);
